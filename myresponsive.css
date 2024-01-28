@@ -1,0 +1,77 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #2874f0;
+    --button-hover-color: #43e78f28; /* Sky Blue */
+}
+
+header {
+    background: var(--main-bg-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+ 
+
+/* Responsive styles */
+@media screen and (max-width: 1066px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .btn button {
+        margin: 10px 0;
+        background-color: var(--button-hover-color);
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .form-ele1 {
+        margin-left: 0;
+    }
+
+    .navallproduct {
+        padding: 10px;
+    }
+
+    .productIMG {
+        width: 100%;
+        height: auto;
+    }
+
+    .cellSize {
+        height: 15vw;
+        width: 100%;
+    }
+
+    .pricingTbl {
+        margin-left: 0;
+    }
+
+    .formcl input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}
+
+/* ... (other media queries as needed) ... */
